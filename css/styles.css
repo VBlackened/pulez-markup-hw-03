@@ -4,11 +4,45 @@
     --highlighted-element: #2196F3;
     --for-darker-bg: #FFFFFF;
 }
+
+/* general styling */
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--font-color);
 }
-.logo {
+h1,
+h2,
+h3,
+p,
+ul,
+figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* header styling*/
+.header {
+    border-bottom: 1px solid #ECECEC;
+    background-color: #FFFFFF;
+}
+.container_header {
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+}
+.logo_pulez {
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -17,11 +51,30 @@ body {
     text-align: left;
     color: red;
     text-decoration: none;
+    margin-right: 93px;
 }
-.header .logo2 {
+.header .logo_studio {
     color:#000000;
 }
-.footer .logo2 {
+.header_nav {
+    flex-grow: 2;
+}
+.header_li--horizontal {
+    display: inline-block;
+}
+.header_nav--right-pad {
+    padding-right: 46px;
+}
+.header_contact--right-pad {
+    padding-right: 50px;
+}
+
+/* order styling */
+.container_order {
+    flex-direction: column;
+    align-items: center;
+}
+.footer .logo_studio {
     color: var(--for-darker-bg);
 }
 .link {
@@ -50,16 +103,17 @@ body {
 .contact:hover {
     color: var(--highlighted-element);
 }
-.index-main-header {
+.index-solution {
     background-color: #2F303A
 }
-.index-main-header h1 {
+.index-solution h1 {
     color:var(--for-darker-bg);
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
+    margin-top: 106px;
     }
 .button-order {
     color:var(--for-darker-bg);
@@ -70,6 +124,10 @@ body {
     letter-spacing: 0.06em;
     text-align: center;
     cursor: pointer;
+    margin-top: 30px;
+    border-style: none;
+    border-radius: 4px;
+    padding: 10px 42px;
 }
 .cipsun h3 {
     font-size: 14px;
