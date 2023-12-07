@@ -74,6 +74,121 @@ figure {
     flex-direction: column;
     align-items: center;
 }
+.index-solution h1 {
+    color:var(--for-darker-bg);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-top: 106px;
+    }
+.button--order {
+    color:var(--for-darker-bg);
+    background-color:var(--highlighted-element);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    border-style: none;
+    border-radius: 4px;
+    padding: 10px 42px;
+    margin-bottom: 106px;
+}
+
+/* cipsun styling */
+.cipsun--horizontal {
+    display: inline-block;
+}
+.cipsun_h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-bottom: 10px;    
+}
+.cipsun_p {
+    color:var(--font-color-secondary);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    inline-size: 270px;
+}
+.cipsun_p--right-pad {
+    margin-right: 30px;
+}
+
+/* crackheads styling */
+.container_crackheads {
+    flex-direction: column;
+    text-align: center;
+}
+.crackheads_h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.crackheads_img--horizontal {
+    display: inline-block;
+}
+.crackhead_img--right-marg {
+margin-right: 30px;
+}
+
+/* team styling */
+.team {
+    background-color:#F5F4FA;
+}
+.container_team {
+    flex-direction: column;
+}
+.team_img--horizontal {
+    display: inline-block;
+}
+.team_img--right-marg {
+    margin-right: 30px;
+}
+.team_h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.team_h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+.team_p {
+    color: var(--font-color-secondary);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.team_window {
+    background-color: var(--for-darker-bg);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px #00000033;
+
+    box-shadow: 0px 1px 1px 0px #00000024;
+
+    box-shadow: 0px 1px 3px 0px #0000001F;
+}
 .footer .logo_studio {
     color: var(--for-darker-bg);
 }
@@ -105,74 +220,6 @@ figure {
 }
 .index-solution {
     background-color: #2F303A
-}
-.index-solution h1 {
-    color:var(--for-darker-bg);
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-align: center;
-    margin-top: 106px;
-    }
-.button-order {
-    color:var(--for-darker-bg);
-    background-color:var(--highlighted-element);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 30px;
-    border-style: none;
-    border-radius: 4px;
-    padding: 10px 42px;
-}
-.cipsun h3 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-align: left;    
-}
-.cipsun p {
-    color:var(--font-color-secondary);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-align: left;
-}
-.index-crackheads h2 {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-
-}
-.index-team {
-    background-color:#F5F4FA;
-}
-.index-team h2 {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-.index-team h3 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-.index-team p {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-align: center;
 }
 .footer {
 background-color: #2F303A;
