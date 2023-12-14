@@ -30,6 +30,23 @@ figure {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.link {
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-decoration: none;
+}
+.link:focus,
+.link:hover {
+    color: var(--highlighted-element)
+}
+.contact:focus,
+.contact:hover {
+    color: var(--highlighted-element);
+}
 
 /* header styling*/
 .header {
@@ -68,11 +85,23 @@ figure {
 .header_contact--right-pad {
     padding-right: 50px;
 }
+.contact {
+    color: var(--font-color-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-decoration: none;
+}
 
 /* order styling */
 .container_order {
     flex-direction: column;
     align-items: center;
+}
+.index-solution {
+    background-color: #2F303A
 }
 .index-solution h1 {
     color:var(--for-darker-bg);
@@ -141,7 +170,6 @@ figure {
 .crackhead_img--right-marg {
 margin-right: 30px;
 }
-
 /* team styling */
 .team {
     background-color:#F5F4FA;
@@ -183,46 +211,25 @@ margin-right: 30px;
 .team_window {
     background-color: var(--for-darker-bg);
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px #00000033;
-
-    box-shadow: 0px 1px 1px 0px #00000024;
-
-    box-shadow: 0px 1px 3px 0px #0000001F;
+    box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
 }
+/* footer styling */
 .footer .logo_studio {
     color: var(--for-darker-bg);
 }
-.link {
-    color: var(--font-color);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-align: left;
-    text-decoration: none;
-}
-.contact {
-    color: var(--font-color-secondary);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-align: left;
-    text-decoration: none;
-}
-.link:focus,
-.link:hover {
-    color: var(--highlighted-element)
-}
-.contact:focus,
-.contact:hover {
-    color: var(--highlighted-element);
-}
-.index-solution {
-    background-color: #2F303A
-}
 .footer {
 background-color: #2F303A;
+}
+.footer_logo--bot-marg {
+    margin-bottom: 20px;
+}
+.footer_li-address--bot-marg {
+    margin-bottom: 9px;
+}
+.container_footer {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer address {
     color: var(--for-darker-bg);
@@ -231,13 +238,18 @@ background-color: #2F303A;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-align: left;    
-}
+ }
 .footer .contact {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: left;
 }
+.fuck-dots {
+    list-style: none;
+}
+
+/* PORTFOLIO */
 .button-filter {
     font-size: 16px;
     font-weight: 500;
@@ -245,6 +257,9 @@ background-color: #2F303A;
     letter-spacing: 0.03em;
     text-align: center;
     background-color:#F5F4FA;
+    border-style: none;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -252,12 +267,37 @@ background-color: #2F303A;
   background-color: var(--highlighted-element);
   color: var(--for-darker-bg);
 }
+.container_portfolio {
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio_buttons {
+    margin-bottom: 50px;
+}
+.buttons_li--horizontal {
+    display: inline-block;
+}
+.portfolio-grid {
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+}
+.portfolio_grid-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+.portfolio_grid-card--li {
+    flex-basis: calc((100% - 90px) / 3);
+}
 .portfolio-masterpieces h3 {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
     text-align: left;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
 }
 .portfolio-masterpieces p {
     font-size: 16px;
@@ -265,4 +305,6 @@ background-color: #2F303A;
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--font-color-secondary);
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
